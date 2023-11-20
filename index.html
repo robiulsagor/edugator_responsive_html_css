@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edugator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Vina+Sans&display=swap"
+        rel="stylesheet">
     <!-- IconScout cdn -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -290,7 +297,159 @@
     </section>
     <!-- =========== END OF FAQS =========== -->
 
+
+    <section class="testimonials">
+        <div class="container testimonials__container mySwiper">
+            <h2>Students' Testimonials</h2>
+
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar1.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Ernest Mill</h5>
+                        <small>Web Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar2.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Donna Julia</h5>
+                        <small>Author</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar3.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>John Doe</h5>
+                        <small>Web Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar4.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Ernest Mill</h5>
+                        <small>Web Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar5.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Sagor</h5>
+                        <small>Web Developer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar6.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Donna Inez</h5>
+                        <small>Web Designer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial__img">
+                        <img src="./images/avatar7.jpg" alt="">
+                    </div>
+                    <div class="testimonial__info">
+                        <h5>Jane Doe</h5>
+                        <small>Fashion Designer</small>
+                    </div>
+                    <div class="testimonial__body">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil reprehenderit voluptatem
+                            ipsam, possimus repellendus dolorum et porro fuga cum voluptatum explicabo ex doloremque
+                            deleniti accusamus.
+                        </p>
+                    </div>
+                </article>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- =========== END OF TESTIMONIALS =========== -->
+
+
     <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
