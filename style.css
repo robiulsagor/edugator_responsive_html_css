@@ -298,6 +298,7 @@ header {
     cursor: pointer;
     transition: var(--transition);
     overflow: hidden;
+    user-select: none;
 }
 
 .faq h4 {
