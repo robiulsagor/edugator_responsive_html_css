@@ -8,3 +8,13 @@ window.addEventListener("scroll", () => {
     // }
     navbar.classList.toggle("window-scroll", scrollY > 50)
 })
+
+
+// hide or show the faqs
+const faqs = document.querySelectorAll(".faq")
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        console.log("tyr");
+        faq.classList.toggle("open")
+    })
+})
