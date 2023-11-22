@@ -39,6 +39,7 @@ body {
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
+    overflow: hidden;
 }
 
 section {
@@ -209,8 +210,9 @@ header {
 
 .category__icon {
     background: var(--color-primary);
-    padding: 0.7rem;
+    padding: 0.7rem 1rem;
     border-radius: 0.9rem;
+    display: inline-block;
 }
 
 .category:nth-child(2) .category__icon {
@@ -575,5 +577,72 @@ footer {
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
+    }
+}
+
+/* =============== MEDIA QUERY FOR PHONES =============== */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .nav__menu {
+        right: 3%;
+    }
+
+    /* === HEADER ===  */
+    header {
+        height: 100vh;
+
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        text-align: center;
+    }
+
+    /*  === category === */
+    .categories__right {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .category__icon {
+        margin-top: 4px;
+    }
+
+    /*  ======== COURSES ========= */
+    .courses__container {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /*  ======= TESTIMONIALS ========== */
+    .testimonials__container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+    /*  ======= TESTIMONIALS ========== */
+    .footer__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonials__container {
+        width: 100%;
+        margin: 0 auto;
     }
 }
