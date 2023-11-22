@@ -25,3 +25,21 @@ faqs.forEach(faq => {
 
     })
 })
+
+
+// show or hide nav menu
+const navBtn = document.querySelector("#open-men-btn")
+const navMenu = document.querySelector(".nav__menu")
+const navClose = document.querySelector("#close-menu-btn")
+
+navBtn.addEventListener("click", () => {
+    navMenu.classList.add("open")
+    navClose.style.display = "inline-block"
+    navBtn.style.display = "none"
+})
+
+navClose.addEventListener("click", () => {
+    navMenu.classList.remove("open")
+    navClose.style.display = "none"
+    navBtn.style.display = "inline-block"
+})

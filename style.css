@@ -379,6 +379,10 @@ footer {
     margin-bottom: 1.1rem;
 }
 
+.footer ul li {
+    margin-bottom: .6rem;
+}
+
 .footer__container a:hover {
     text-decoration: underline;
 }
@@ -404,4 +408,172 @@ footer {
     border-top: 1px solid #eae2e228;
     margin-top: 1.5rem;
     padding: 2rem;
+}
+
+
+/* ==================== MEDIA QUERIES ==================== */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* ================= NAVBAR =============== */
+
+    nav button {
+        display: inline-block;
+        font-size: 1.8rem;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .nav__menu {
+        position: absolute;
+        top: 5rem;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        width: 15rem;
+        display: none;
+    }
+
+    .nav__menu li a {
+        display: block;
+        background: var(--color-primary);
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        animation: animateNavList .5s linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+    }
+
+    .nav__menu li a:hover {
+        background: var(--color-bg-2);
+        color: #fff;
+    }
+
+    .nav__menu li:nth-child(2) a {
+        animation-delay: .3s;
+    }
+
+    .nav__menu li:nth-child(3) a {
+        animation-delay: .6s;
+    }
+
+    .nav__menu li:nth-child(4) a {
+        animation-delay: .9s;
+    }
+
+    @keyframes animateNavList {
+        0% {
+            transform: rotateZ(-90deg) rotateY(200deg) rotateX(100deg);
+        }
+
+        100% {
+            transform: rotateZ(0deg);
+            opacity: 1;
+        }
+    }
+
+    .nav__menu.open {
+        display: flex;
+    }
+
+
+
+    /* ======= HEADER ========= */
+    header {
+        margin-bottom: 5rem;
+    }
+
+    .header__container {
+        gap: 0rem;
+    }
+
+    .header__left p {
+        margin: 1rem 0 1rem;
+    }
+
+    /* ======== CATEGORIES ========= */
+    .categories {
+        height: fit-content;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+
+
+    /* ========== COURSES ============ */
+    .courses {
+        margin-top: 0rem;
+    }
+
+    .courses__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .course {
+        background: var(--color-bg-1);
+        border: 1px solid transparent;
+        transition: var(--transition);
+    }
+
+
+    /* ========== FAQS ============ */
+    .faqs__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .faq {
+        padding: 1.2rem;
+    }
+
+
+    /* TESTIMONIALS */
+    .testimonial__body {
+        padding: 1.2rem;
+    }
+
+    .testimonial__info {
+        margin-top: 1.2rem;
+    }
+
+    /*  ============== footer ============= */
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
 }
